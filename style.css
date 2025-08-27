@@ -16,7 +16,7 @@ body {
 }
 
 .stardew-bg {
-    background-image: url(/imagens/dia.jpg);
+    background-image: url(/imagens/wp6659180.png);
     background-size: cover;
     background-position: center;
     width: 100vw;
@@ -37,8 +37,10 @@ body {
     align-items: center;
     justify-content: center;
 
-    width: 100vw;
-    max-width: 350px;
+    width: 60vw;
+    max-width: 650px;
+    height: 65vh;
+    max-height: 500px;
     margin: 0 auto;
     padding: 55px 25px 25px 25px;
     border-radius: 20px;
@@ -58,10 +60,17 @@ body {
     gap: 10px;
 }
 
+.card-header .logo-sw {
+    width: 60%;
+    max-width: 300px;
+    height: auto;
+}
+
 .card-header h1 {
     font-weight: 700;
     font-size: 2em;
 }
+    
 
 .card-header-buttons {
     display: flex;
@@ -73,20 +82,39 @@ body {
 .card-header-buttons button {
     padding: 8px;
     border-radius: 10px;
-    border: 3px solid #E38248;
+    border: 7px solid transparent;
+    border-image: url(/imagens/menu_border.png) 15 stretch;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 1em;
     background-color: #FDD78B;
 }
 
-.card-header-buttons .active {
-    
+.card-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
-
-/*
-.container {
-    
-    
+.progress-value {
+    font-size: 5em;
+    font-weight: 900;
 }
-*/
+
+.card-footer {
+    display: flex;
+    justify-content: stretch;
+    gap: 3px;
+    padding: 10px;
+}
+
+.card-footer button {
+    padding: 8px 50px;
+    border: 3px solid #049108;
+    font-weight: 600;
+    font-size: 1em;
+    color: white;
+    background-color: #03A007;
+}
+
