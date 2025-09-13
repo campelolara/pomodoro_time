@@ -42,7 +42,7 @@ body {
     height: 65vh;
     max-height: 500px;
     margin: 0 auto;
-    padding: 55px 25px 25px 25px;
+    padding: 25px 25px 25px 25px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.29);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -61,7 +61,7 @@ body {
 }
 
 .card-header .logo-sw {
-    width: 60%;
+    width: 40%;
     max-width: 300px;
     height: auto;
 }
@@ -87,6 +87,8 @@ body {
     font-weight: 600;
     font-size: 1em;
     background-color: #FDD78B;
+    transition: 0.2s ease-in-out;
+
 }
 
 .card-body {
@@ -97,7 +99,15 @@ body {
     padding: 10px;
 }
 
-.progress-value {
+.card-body .timer {
+    transition: 0.4s ease-in-out; 
+}
+
+.card-body .timer:hover {
+    transform: scale(1.1);
+}
+
+.timer {
     font-size: 5em;
     font-weight: 900;
 }
@@ -105,7 +115,7 @@ body {
 .card-footer {
     display: flex;
     justify-content: stretch;
-    gap: 3px;
+    gap: 10px;
     padding: 10px;
 }
 
@@ -115,6 +125,28 @@ body {
     font-weight: 600;
     font-size: 1em;
     color: white;
-    background-color: #03A007;
+    transition: 0.2s ease-in-out;
+
 }
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.card-footer #btn-start {
+    background-color: #03A007;
+    
+}
+
+.card-footer #btn-stop {
+    background-color: #cf2405;
+    border: 3px solid #b9260b;
+}
+
+.card-footer #btn-reset {
+    background-color: #ddab08;
+    border: 3px solid #c9a509;
+}
+
 
